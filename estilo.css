@@ -5,29 +5,44 @@ body {
   font-size: 14px;
   font-weight: normal;
 
+  /* p {
+      line-height: 70%;
+    } */
+
   /* header */
 
   header {
-    margin-bottom: 100px;
+    position: fixed;
+    top: 5px;
   }
 
-  /* columnas */
 
- 
- main {
+  /* columna izq */
+
+  #linktree {
+    margin-top: 150px;
+  }
+
+  main {
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
- }
-
-
-  #sidebar {
-    width: 25%;
-    min-width: 200px;
-    margin-right: 10px;
   }
 
- 
+  #sidebar {
+    width: 16%;
+    min-width: 200px;
+    margin-top: 250px;
+    margin-right: 100px;
+    position: fixed;
+  }
+
+  article {
+    display: flex;
+    justify-content: space-between;
+  }
+
 
   /* links */
 
@@ -42,20 +57,26 @@ body {
 
   a:hover {
     color: #982b00;
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
 
   a:focus-visible {
     outline: 2px solid;
   }
 
-  /* listas */
 
-  ul {
-    list-style-type: none;
-    padding-top: 50px;
-    padding-left: 0px;
+
+  /* columna principal */
+
+  #principal {
+    margin-left: 200px;
+    text-align: end;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
+
+
 
   /* imagen */
 
@@ -66,13 +87,12 @@ body {
 }
 
 
-article {
-  display: flex;
-  justify-content: space-between;
-}
-
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: fixed;
-  bottom: 20px;
-  left: 20px;
+  bottom: 10px;
+  width: 100%;
+
 }
